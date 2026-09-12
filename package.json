@@ -1,0 +1,13 @@
+{
+  "name": "website-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RAG chatbot widget for a static website, powered by Google Gemini (free tier) and Vercel serverless functions.",
+  "scripts": {
+    "build-index": "node scripts/build-index.js",
+    "dev": "vercel dev"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 40px 20px; line-height: 1.6; color: #222; }
+    main { max-width: 700px; margin: 0 auto; }
+    h1 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Welcome to my website</h1>
+    <p>This is a demo page showing the chat widget in the bottom-right corner. This is the same
+       widget you'll paste into your real site — it's a single script tag.</p>
+    <p>Try asking it something covered in <code>content/business-info.md</code> once you've
+       filled that in and run <code>npm run build-index</code>.</p>
+  </main>
+
+  <!-- Chat widget: this is the entire integration snippet. -->
+  <script
+    src="/widget.js"
+    data-api-url="/api/chat"
+    data-title="Ask us anything"
+    data-greeting="Hi! Ask me anything about this site or business."
+  ></script>
+</body>
+</html>
